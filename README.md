@@ -1,1 +1,13 @@
 # Portfolio
+
+Este repositorio contiene una página web de portafolio que utiliza la paleta de grises "wild-sand" y animaciones suaves.
+
+## Cómo usar
+
+Abre `index.html` en tu navegador preferido y personaliza el contenido con tu información y proyectos. La página incluye navegación fija, enlace para saltar directamente al contenido, soporte para usuarios con preferencia de reducir movimiento y estilos responsive.
+
+### Experiencia de usuario
+
+- Conmutador de tema claro/oscuro con persistencia de preferencia
+- Formulario de contacto accesible con mensajes dinámicos
+- Botón para volver al inicio y realce automático del enlace de navegación activo
