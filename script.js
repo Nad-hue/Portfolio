@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (reduceMotion) {
     faders.forEach(el => el.classList.add('visible'));
+
   } else {
     const observer = new IntersectionObserver((entries, obs) => {
       entries.forEach(entry => {
@@ -62,4 +63,20 @@ document.addEventListener('DOMContentLoaded', () => {
     form.reset();
     formMsg.textContent = 'Gracias por tu mensaje. Te contactaré pronto.';
   });
+
+    return;
+  }
+
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  faders.forEach(element => observer.observe(element));
+
 });
