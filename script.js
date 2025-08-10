@@ -1,5 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
   const faders = document.querySelectorAll('.fade-in');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (reduceMotion) {
+    faders.forEach(el => el.classList.add('visible'));
+    return;
+  }
+
 
   const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {

@@ -3,11 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio profesional de Tu Nombre, proyectos y contacto." />
 
   <title>Mi Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+
+  <nav class="navbar" aria-label="Navegación principal">
+    <ul class="nav-links">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
 
   <header class="hero">
     <h1 class="hero-title">Tu Nombre</h1>
@@ -15,7 +27,40 @@
     <a href="#proyectos" class="btn">Ver proyectos</a>
   </header>
 
- 
+
+  <main id="main">
+    <section id="sobre-mi" class="section fade-in">
+      <h2>Sobre mí</h2>
+      <p>
+        Breve descripción sobre quién eres, tus habilidades y tu experiencia.
+      </p>
+    </section>
+
+    <section id="proyectos" class="section fade-in">
+      <h2>Proyectos</h2>
+      <div class="proyecto-grid">
+        <article class="proyecto-card">
+          <h3>Proyecto 1</h3>
+          <p>Descripción breve del proyecto.</p>
+        </article>
+        <article class="proyecto-card">
+          <h3>Proyecto 2</h3>
+          <p>Descripción breve del proyecto.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="section fade-in">
+      <h2>Contacto</h2>
+      <p>Si quieres colaborar, no dudes en escribirme.</p>
+      <a href="mailto:correo@example.com" class="btn">Escríbeme</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Tu Nombre</p>
+  </footer>
+
 
   <script src="script.js"></script>
 </body>
